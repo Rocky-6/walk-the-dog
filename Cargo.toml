@@ -28,6 +28,7 @@ wasm-bindgen-futures = "0.4.40"
 serde = { version = "1.0.195", features = ["derive"] }
 gloo-utils = { version = "0.2.0", features = ["serde"] }
 anyhow = "1.0.79"
+async-trait = "0.1.77"
 
 # The `web-sys` crate allows you to interact with the various browser APIs,
 # like the DOM.
@@ -39,6 +40,7 @@ features = [
     "Document",
     "Element",
     "Response",
+    "Performance",
     "HtmlCanvasElement",
     "HtmlImageElement",
     "CanvasRenderingContext2d",
