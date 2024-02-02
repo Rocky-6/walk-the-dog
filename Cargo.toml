@@ -44,6 +44,7 @@ features = [
     "HtmlCanvasElement",
     "HtmlImageElement",
     "CanvasRenderingContext2d",
+    "KeyboardEvent",
 ]
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
@@ -54,4 +55,4 @@ features = [
 # These crates are used for running unit tests.
 [dev-dependencies]
 wasm-bindgen-test = "0.3.40"
-js-sys = "0.3.22"
+js-sys = "0.3.67"
