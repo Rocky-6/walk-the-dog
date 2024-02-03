@@ -11,7 +11,7 @@ use web_sys::{CanvasRenderingContext2d, HtmlImageElement};
 
 use crate::browser::{self, LoopClosure};
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct SheetRect {
     pub x: i16,
     pub y: i16,
@@ -19,12 +19,12 @@ pub struct SheetRect {
     pub h: i16,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Cell {
     pub frame: SheetRect,
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Clone)]
 pub struct Sheet {
     pub frames: HashMap<String, Cell>,
 }
